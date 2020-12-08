@@ -6,12 +6,12 @@ export default function Item(){
     return(
         <View style={styles.container}>
             <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
-            <Photos Imagesource={require("../Images/usuario.png")} Photos/>
-            <Photos Imagesource={require("../Images/jojovasci.jpg")} Photos/>
-            <Photos Imagesource={require("../Images/heheh.jpeg")} Photos/>
-            <Photos Imagesource={require("../Images/usuario.png")} Photos/>
-            <Photos Imagesource={require("../Images/usuario.png")} Photos/>
-            <Photos Imagesource={require("../Images/usuario.png")} Photos/>
+            <Photos Imagesource={require("../Images/usuario.png")} Username="Eduardo" Photos/>
+            <Photos Imagesource={require("../Images/jojovasci.jpg")} Username="Paulo" Photos/>
+            <Photos Imagesource={require("../Images/heheh.jpeg")} Username="Lucas" Photos/>
+            <Photos Imagesource={require("../Images/usuario.png")} Username="Joao" Photos/>
+            <Photos Imagesource={require("../Images/usuario.png")} Username ="Ruth" Photos/>
+            <Photos Imagesource={require("../Images/usuario.png")} Username="Julia" Photos/>
             </ScrollView>
         </View>
     );
@@ -24,7 +24,11 @@ const styles = StyleSheet.create({
         width:'100%',
         height:70,
         borderBottomWidth: 1,
-        borderBottomColor: '#eee'
+        borderBottomColor: '#eee',
+        alignItems:"center",
+        justifyContent:'center',
+        display:'flex',
+        flexDirection: "column"
     },
 });
 
